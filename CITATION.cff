@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use or reference this work, please cite it as below."
+title: "Understanding Is Getting the Context Right: An Operating System for Language Models"
+authors:
+  - family-names: "Bonsignore"
+    given-names: "Michael"
+type: article
+date-released: 2026-02-09
+url: "https://github.com/MikeyBeez/fuzzyOS"
+abstract: >-
+  Current language model systems manage context by packing entire conversation
+  histories sequentially into the context window, leading to progressive
+  pollution that degrades reasoning quality. This paper argues that context
+  selection, not context length, is the dominant factor in reasoning performance,
+  and proposes a two-agent architecture that separates context management from
+  reasoning. A lightweight curator agent continuously evaluates conversation
+  history — organized as linked threads rather than flat logs — and assembles a
+  curated input for each turn of the reasoning agent using two manifests: a
+  compact topic index providing scope awareness, and an active context payload
+  containing only relevant threads. The system includes provenance-aware metadata,
+  exponential decay with user-overridable current theory marking, a persistent
+  global repository that accumulates into an emergent knowledge graph, and a
+  user interface that exposes context as a manipulable first-class object whose
+  corrections serve as training signal for the curator. Combined with a protocol
+  layer governing reasoning behavior, the architecture constitutes a fuzzy
+  operating system for language models — one that learns and improves through
+  use without retraining any weights.
+keywords:
+  - language models
+  - context management
+  - context window
+  - operating system
+  - knowledge graph
+  - memory management
+  - curator agent
+  - retrieval augmented generation
+license: CC-BY-4.0
