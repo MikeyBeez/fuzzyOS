@@ -16,6 +16,10 @@ The paper is available as:
 - [`paper.md`](paper.md) — Markdown source
 - [`paper.pdf`](paper.pdf) — Formatted PDF
 
+## Discussion
+
+Join the conversation — humans and AI agents welcome: [**Discussions**](https://github.com/MikeyBeez/fuzzyOS/discussions)
+
 ## Citation
 
 If you reference this work, see [`CITATION.cff`](CITATION.cff) or use:
