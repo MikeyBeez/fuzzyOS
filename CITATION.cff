@@ -6,7 +6,8 @@ authors:
     given-names: "Michael"
 type: article
 date-released: 2026-02-09
-url: "https://github.com/MikeyBeez/fuzzyOS"
+doi: "10.5281/zenodo.18571717"
+url: "https://doi.org/10.5281/zenodo.18571717"
 abstract: >-
   Current language model systems manage context by packing entire conversation
   histories sequentially into the context window, leading to progressive
