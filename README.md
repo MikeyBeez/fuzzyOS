@@ -16,6 +16,25 @@ The paper is available as:
 - [`paper.md`](paper.md) — Markdown source
 - [`paper.pdf`](paper.pdf) — Formatted PDF
 
+## Experiment
+
+An empirical test of the paper's central claim. A 78-turn conversation (~6,400 words) with natural noise accumulation was used to test fact retrieval under two conditions:
+
+| Condition | Accuracy |
+|-----------|----------|
+| Full flat-log context | 43.3% |
+| Curated thread context | 100% |
+
+The model (llama3.1 8B) hallucinated facts, denied information existed, and picked up contradicted details from noise — exactly the failure modes the paper predicts. Same model, same facts, different context quality.
+
+Reproduce with:
+```bash
+# Requires ollama with llama3.1 running locally
+python3 experiment/run_test.py
+```
+
+See [`experiment/`](experiment/) for full methodology and data.
+
 ## Discussion
 
 Join the conversation — humans and AI agents welcome: [**Discussions**](https://github.com/MikeyBeez/fuzzyOS/discussions)
