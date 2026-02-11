@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "question": "What database system and port number is being used for the bookstore project?",
+    "expected": "PostgreSQL on port 5433",
+    "keywords": ["postgresql", "postgres", "5433"],
+    "thread": "database"
+  },
+  {
+    "id": 2,
+    "question": "What are the two user roles in the authentication system and what can each do?",
+    "expected": "Admin can create and delete books, viewer can only read",
+    "keywords": ["admin", "viewer"],
+    "thread": "auth"
+  },
+  {
+    "id": 3,
+    "question": "What is the rate limit for the search endpoint?",
+    "expected": "100 requests per minute per user",
+    "keywords": ["100"],
+    "thread": "rate_limiting"
+  },
+  {
+    "id": 4,
+    "question": "What is the official project name that the boss chose and why?",
+    "expected": "Volumes — it's a pun because they're selling books",
+    "keywords": ["volumes", "pun"],
+    "thread": "project_name"
+  },
+  {
+    "id": 5,
+    "question": "How long are JWT tokens valid before they expire?",
+    "expected": "48 hours",
+    "keywords": ["48"],
+    "thread": "auth"
+  },
+  {
+    "id": 6,
+    "question": "What happens when the CSV import encounters a book with an ISBN that already exists in the database?",
+    "expected": "It upserts — updates the existing record rather than creating a duplicate",
+    "keywords": ["update"],
+    "thread": "csv_import"
+  },
+  {
+    "id": 7,
+    "question": "How many Gunicorn workers are configured in the Dockerfile?",
+    "expected": "4 workers",
+    "keywords": ["4"],
+    "thread": "deployment"
+  },
+  {
+    "id": 8,
+    "question": "What I2C address is the BME280 sensor using on the Raspberry Pi?",
+    "expected": "0x76",
+    "keywords": ["0x76"],
+    "thread": "weather_station"
+  },
+  {
+    "id": 9,
+    "question": "Why was Redis caching not implemented in the final design?",
+    "expected": "The user decided it was premature optimization and chose to skip it",
+    "keywords": ["premature", "skip"],
+    "thread": "caching_abandoned"
+  },
+  {
+    "id": 10,
+    "question": "What is the default pagination page size for the book listing endpoint?",
+    "expected": "20 items per page",
+    "keywords": ["20"],
+    "thread": "api_endpoints"
+  }
+]
