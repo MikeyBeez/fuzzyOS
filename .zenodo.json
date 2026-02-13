@@ -1,0 +1,36 @@
+{
+  "title": "Understanding Is Getting the Context Right: An Operating System for Language Models",
+  "description": "Every language model system faces the same problem: as conversations grow, the context window fills with irrelevant history, and reasoning quality degrades. The standard response is to build longer context windows. This paper argues that's the wrong solution — what matters is not how much context the model sees, but which context it sees.\n\nWe propose a two-agent architecture that separates context management from reasoning. A lightweight curator agent continuously evaluates conversation history and assembles a focused input for the reasoning agent on every turn. Instead of a flat chat log, conversations are organized as linked threads, and the curator selects only the threads relevant to the current query.\n\nThe architecture includes:\n\n• A topic index that gives the reasoning agent scope awareness without token cost\n• An active context payload containing only relevant threads\n• Provenance-aware metadata with exponential decay, so stale context fades naturally\n• A persistent knowledge repository that accumulates into an emergent knowledge graph\n• A user interface that exposes context as a first-class object — users can see, edit, and correct what the model is working with, and those corrections train the curator\n\nThe result is a \"fuzzy operating system\" for language models — a system that manages context the way an OS manages memory, learning and improving through use without retraining any weights.\n\nThis architecture has been empirically validated: a controlled experiment on SQuAD 2.0 showed that even a minimal version of the curator agent improves exact match accuracy by 5.5 percentage points while reducing prompt tokens by 92%. See \"Context Curation Improves LLM Answer Quality\" (Bee, 2026, doi:10.5281/zenodo.18626830).",
+  "creators": [
+    {
+      "name": "Bonsignore, Michael",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "language models",
+    "context management",
+    "context window",
+    "operating system",
+    "knowledge graph",
+    "memory management",
+    "curator agent",
+    "retrieval augmented generation",
+    "context curation",
+    "two-agent architecture",
+    "conversation management",
+    "context pollution",
+    "token efficiency",
+    "fuzzy operating system"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.18626830",
+      "relation": "isSupplementedBy",
+      "resource_type": "publication-preprint"
+    }
+  ]
+}
